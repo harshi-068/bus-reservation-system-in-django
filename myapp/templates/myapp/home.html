@@ -1,0 +1,30 @@
+<!-- your_app/templates/myapp/index.html -->
+
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+{% load static %}
+<style>
+    body {
+        background-image: url("{% static 'mysite/images/busimg.jpg' %}");
+        /* Add other background properties here */
+    }
+    .text-box {
+        background-color: rgba(255, 255, 255, 0.7); /* Set the background color with some transparency */
+        padding: 20px; /* Add some padding to the text box */
+        border-radius: 10px; /* Add rounded corners to the text box */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+        max-width: 600px; /* Limit the width of the text box */
+        margin: 200px auto 0; /* Center the text box horizontally and add margin to the top */
+        font-family: Pacifico; /* Set the font family */
+    }
+</style>
+
+<center>
+    <div class="text-box">
+        <h1 style="color: black;"><i>HRH TRAVELS</i></h1>
+        <br>
+        <h3 style="color: black;"><i>An online bus reservation system is a digital platform that automates the process of booking bus tickets. It provides a user-friendly interface for customers to select their travel dates, routes, and seats, and to make payments online.</i></h3>
+    </div>
+</center>
+{% endblock %}
